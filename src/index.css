@@ -1,0 +1,23 @@
+ 
+ 
+ 
+ .container{
+    background-color: beige;
+    display:flex;
+   }
+   .row2{
+      text-align: center;
+      background-color:lawngreen;
+   }
+    
+   .card{
+      margin:10px;
+      display:flex; 
+       border-radius: 10px;
+      text-align: center;
+}
+
+ 
+    
+
+   
