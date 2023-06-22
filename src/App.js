@@ -16,22 +16,23 @@ function Button(props) {
  
     function App() {
   const [cart,setCart]=useState(0);
-  const handleAddClick=()=>setCart(cart + 1);
+  const [buttonText,setButtonText]=useState('addcart')
   
-  const [isaddcartEnabled, setIsaddcartEnabled] = useState({
-        addcart: false,
-        
-      });
-      const [cartData, setCartData] = useState([]);
-    
-      const handleClick = (addcart) => {
-        setCartData([...cartData, 12]);
-        setIsaddcartEnabled((prevState) => ({
-          ...prevState,
-          [addcart]: true
-        }));
+  
+ function handleAddClick(){
+  if(cart===0){
+    setCart(prevstate=> prevstate+1);
+    setButtonText('remove')}
+  else {
+  setCart(prevstate=> prevstate-1);
+setButtonText('addcart')
+   
+        }
       }
-    console.log(cartData);
+   
+  
+   
+       
 const [cards]=useState([
     {
       id:1,
