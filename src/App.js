@@ -133,7 +133,7 @@ const [cards]=useState([
                             </div>
                             
   <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-  <div class="text-center">< Button class="btn btn-outline-dark mt-auto" text='addcart' handleClick={handleAddClick}></Button></div>
+  <div class="text-center">< Button class="btn btn-outline-dark mt-auto" text={buttonText} handleClick={handleAddClick}></Button></div>
                                 </div>
                         </div>
                         </div>
