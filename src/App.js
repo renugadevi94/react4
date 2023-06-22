@@ -49,14 +49,16 @@ const [cards]=useState([
     reviews:'*****',
     productprice:'$50',
     productprice1:'$25',
-    important:true
+    important:true,
+   Sale:'sale'
 },
 {
   id:3,
   title:'Sale Item',
   productprice:' ',
   productprice1:'$40-$80',
-  important:true
+  important:true,
+ Sale:'sale'
    },
 {
   id:4,
@@ -117,7 +119,7 @@ const [cards]=useState([
               <div Card key ={card.id} card={card} >
                 <div class="col  mb-5">
                         <div class="card  h-100">
-                        <div class="badge bg-dark text-white position-absolute">Sale</div>
+                        <div class="badge bg-dark text-white position-absolute">{card.Sale}</div>
                             
                             <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
                             
